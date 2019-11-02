@@ -1,0 +1,4 @@
+name = "Magnetostatics"
+uuid = "1cd694c0-fdba-11e9-002d-1dc90690714d"
+authors = ["BEC4 <bec4@mit.edu>"]
+version = "0.1.0"
