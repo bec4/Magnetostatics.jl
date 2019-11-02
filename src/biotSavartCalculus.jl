@@ -1,6 +1,7 @@
 function pathVec(pointArray::Array{Float64,2})
     #assume pointArray is an 2d array 3 X N
     #assume the path vector associated with the end of the path is a zero vector.
+    ###
     return hcat(pointArray[:,2:end]-pointArray[:,1:end-1],[0.0, 0.0, 0.0])
 end
 
