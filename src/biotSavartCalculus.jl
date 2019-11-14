@@ -35,6 +35,14 @@ function fieldNorm(x, pathElement, dlvec)
    return sqrt(sum(biasField(x,pathElement,dlvec).^2))
 end
 
+function fieldXComponent(x, pathElement, dlvec)
+    return biasField(x, pathElement, dlvec)[1]
+end
+
+function fieldYComponent(x, pathElement, dlvec)
+    return biasField(x, pathElement, dlvec)[2]
+end
+
 function fieldZComponent(x, pathElement, dlvec)
     return biasField(x, pathElement, dlvec)[3]
 end
