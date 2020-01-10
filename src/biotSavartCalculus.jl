@@ -47,6 +47,6 @@ function fieldZComponent(x, pathElement, dlvec)
     return biasField(x, pathElement, dlvec)[3]
 end
 
-function fieldNormplusBias(x, pathElement, dlvec, bias = [0, 0, 0])
+function fieldNormplusBias(x, pathElement, dlvec, bias)
    return sqrt(sum( ( biasField(x,pathElement,dlvec) + bias  ).^2))
 end
